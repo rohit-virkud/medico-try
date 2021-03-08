@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Medico Template | @rohit_virkud </title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style type="text/css">
+    	*{
+    		margin: 0;
+    		padding: 0;
+    		box-sizing: border-box;
+    		font-family: 'Lato', sans-serif;
+    	}
+    	body
+    	{
+    		background: #07242E;
+ 		    color: white;
+    	}
+    	.hero-wrapper
+    	{
+    		width: 100%;
+    		height: 100vh;
+    		display: flex;
+    		justify-content: center;
+    	}
+    	.hero-container
+    	{ 
+           width: 87%;
+    	   height: 100vh; 
+    	}
+    	.logo-container
+    	{
+    		 width: 100%;
+    		 
+    	}
+    	.brand-logo
+    	{ 
+		  display: flex;
+		  overflow: hidden;
+		  width: 150px;
+		  height: 150px;
+		  margin-top: 45px;
+		  justify-content: center;
+		  align-items: center;
+		  border-top-style: solid;
+		  border-top-width: 3px;
+		  border-top-color: hsla(0, 0.00%, 100.00%, 1.00);
+		  border-right-style: solid;
+		  border-right-width: 3px;
+		  border-right-color: hsla(0, 0.00%, 100.00%, 1.00);
+		  border-bottom-style: solid;
+		  border-bottom-width: 3px;
+		  border-bottom-color: hsla(0, 0.00%, 100.00%, 1.00);
+		  border-left-style: solid;
+		  border-left-width: 3px;
+		  border-left-color: hsla(0, 0.00%, 100.00%, 1.00);
+		  border-top-left-radius: 84%;
+		  border-top-right-radius: 84%;
+		  border-bottom-left-radius: 84%;
+		  border-bottom-right-radius: 84%;
+		  background-color: hsla(183.8709677419355, 87.15%, 48.82%, 1.00);
+		  color: hsla(183.8709677419355, 0.00%, 100.00%, 1.00);
+		  filter: drop-shadow(0px 10px 35px rgba(23, 181, 240, 0.431));
+
+    	} 
+    	.img
+    	{
+    		width: 80px;
+    		height: 80px;
+    	}
+    	.headline
+    	{
+
+		  width: 250px;
+		  margin-top: 30px;
+		  font-size: 30px;
+		  color: hsla(0, 0.00%, 100.00%, 1.00);
+		  font-weight: 900;
+		  line-height: 30px
+		  letter-spacing: 0.1em;
+		  margin-left: 10px;
+
+    	}
+    	.tag
+    	{
+    	  width: 300px;
+		  color: hsla(183.42857142857142, 94.59%, 92.75%, 1.00);
+		  font-size: 14px;
+		  font-weight: 400;
+		  letter-spacing: 0.1em;
+		  margin-top: 10px;
+		  margin-left: 10px;
+    	}
+    	.para-description
+    	{
+    		width: 100%;
+    	}
+    	.contact-container
+    	{
+    		margin-left: 10px;
+    	}
+        
+        .contact-section{
+		  display: flex;
+		  margin-top: 40px;
+		  justify-content: flex-start;
+		  align-items: center;
+		  margin-left: 10px;
+		}
+		.icon-container
+		{
+			
+		  display: flex;
+		  width: 30px;
+		  height: 30px;
+		  justify-content: center;
+		  align-items: center;
+		  border-top-left-radius: 50%;
+		  border-top-right-radius: 50%;
+		  border-bottom-left-radius: 50%;
+		  border-bottom-right-radius: 50%;
+		  background-color: hsla(183.8709677419355, 87.15%, 48.82%, 1.00);
+		  filter: drop-shadow(0px 5px 20px rgba(13, 157, 227, 0.38));
+
+		}
+		.txt
+		{
+		  overflow: visible;
+		  width: 300px;
+		  height: auto;
+		  margin-left: 13px;
+		  color: hsla(0, 0.00%, 100.00%, 1.00);
+		  font-size: 16px;
+		  font-weight: 400;
+		  column-count: auto;
+
+		}
+		.phone-img
+		{
+			width: 15px;
+			height: 15px;
+		}
+		.home-img
+		{
+			width: 21px;
+	        height: 17px;
+		}
+		.mg-top-less
+		{
+			 margin-top: 20px;
+		}
+
+		.big-icons
+		{
+			
+		  display: flex;
+		  margin-top: 60px;
+		  justify-content: center;
+		  align-items: center;
+        }
+        .big-icon-text-container
+        {
+
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: center;
+		  align-items: center;
+
+        }
+        .big-icon-holder
+        {
+        	
+		  display: flex;
+		  width: 50px;
+		  height: 50px;
+		  justify-content: center;
+		  align-items: center;
+		  border-top-style: solid;
+		  border-top-width: 3px;
+		  border-top-color: hsla(0, 0.00%, 100.00%, 1.00);
+		  border-right-style: solid;
+		  border-right-width: 3px;
+		  border-right-color: hsla(0, 0.00%, 100.00%, 1.00);
+		  border-bottom-style: solid;
+		  border-bottom-width: 3px;
+		  border-bottom-color: hsla(0, 0.00%, 100.00%, 1.00);
+		  border-left-style: solid;
+		  border-left-width: 3px;
+		  border-left-color: hsla(0, 0.00%, 100.00%, 1.00);
+		  border-top-left-radius: 50%;
+		  border-top-right-radius: 50%;
+		  border-bottom-left-radius: 50%;
+		  border-bottom-right-radius: 50%;
+		  background-color: hsla(183.8709677419355, 87.15%, 48.82%, 1.00);
+
+
+        }
+        .contact-image
+        {
+
+		  padding-right: 0px;
+		  padding-left: 4px;
+		  width: 24px;
+		  height: 21px;
+
+        }
+        .share-icon
+        {
+        	width: 25px;
+        	height: 22px;
+
+        }
+        .text-block
+        {
+
+		  margin-top: 10px;
+		  color: hsla(0, 0.00%, 100.00%, 1.00);
+		  font-size: 11px;
+		  text-align: center;
+
+        }
+
+
+    </style>
+</head>
+<body>
+  
+   <div class="hero-wrapper">
+   	  
+   	  
+   	<div class="hero-container">
+        
+        <div class="logo-container">
+   	  	  <div class="brand-logo">
+   	  	 	 <img src="logo.png" class="img">
+   	  	  </div>
+   	  	</div>
+
+         
+        <div class="name-container">
+        	<h1 class="headline">Elena Papadopoulou</h1>
+        	<p class="tag">General Clinic</p>
+        </div> 
+
+        
+        <div class="para-description">
+          
+          <a class="contact-section">
+          	<div class="icon-container">
+          	   <img src="phone.png" class="phone-img">
+            </div>
+            <p class="txt">+30 6936503000.</p>
+          </a>
+
+
+          <a class="contact-section mg-top-less">
+          	<div class="icon-container">
+          	   <img src="home.png" class="home-img">
+            </div>
+            <p class="txt">+30 6936503000.</p>
+          </a>
+
+          
+          <a class="contact-section mg-top-less">
+          	<div class="icon-container">
+          	   <img src="home.png" class="home-img">
+            </div>
+            <p class="txt">info@artcoolcards.gr.</p>
+          </a>
+
+
+          <a class="contact-section mg-top-less">
+          	<div class="icon-container">
+          	   <img src="location.png" class="home-img">
+            </div>
+            <p class="txt">Lisikratous 88, Kallithea, 17674 Athens, Greece</p>
+          </a>
+
+          <a class="contact-section mg-top-less">
+          	<div class="icon-container">
+          	   <img src="location.png" class="home-img">
+            </div>
+            <p class="txt">www.artcoolcards.gr</p>
+          </a>
+
+        </div>
+
+    
+        <div class="big-icons">
+	    	
+	    	<div class="big-icon-text-container">
+	    		<div class="big-icon-holder">
+	    			<img src="contact.png" class="contact-image">
+	    		</div>
+	    		<p class="text-block">Save My Contact</p>
+	    	</div>
+
+	    	<div class="big-icon-text-container" style="margin-left: 30px;">
+	    		<div class="big-icon-holder">
+	    			<img src="share.png" class="share-icon">
+	    		</div>
+	    		<p class="text-block">Share My Contact</p>
+	    	</div>
+
+        </div>
+
+    </div>
+
+ </div>
+
+
+ 
+</body>
+</html>
