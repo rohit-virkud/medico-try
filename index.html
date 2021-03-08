@@ -19,12 +19,65 @@
     		background: #07242E;
  		    color: white;
     	}
+    	.background-img
+    	{
+    		width: 60vw;
+    		height: 105vh;
+    		right: 0;
+    		position: absolute;
+    	}
+    	.circle-one, .circle-two
+    	{
+    		position: absolute;
+    		right: 0;
+    	}
+    	.circle-one
+    	{
+    		top: 2%;
+    		right: 30%;
+    		width: 30px;
+    		height: 26px;
+    	}
+    	.circle-two
+        {
+        	top: 60%;
+        	width: 43px;
+        	height: 38px;
+        }
+        .cross-one{
+            width: 15px;
+            height: 15px;
+            top: 50%;
+            right: 30%;
+            position: absolute;
+           
+        }
+        .cross-two{
+        	width: 20px;
+            height: 20px;
+            top: 32%;
+            right: 8%;
+            position: absolute;
+
+        }
+        .one-two-three
+        {
+        	position: absolute;
+        	width: 120px;
+        	height: 8px;
+            top: 20%;
+            right: 10%;
+        }
+
     	.hero-wrapper
     	{
     		width: 100%;
     		height: 100vh;
     		display: flex;
     		justify-content: center;
+    		position: sticky;
+    		top: 0;
+
     	}
     	.hero-container
     	{ 
@@ -145,8 +198,24 @@
 		}
 		.home-img
 		{
-			width: 21px;
-	        height: 17px;
+			width: 18px;
+	        height: 14px;
+		}
+		.msg-img
+		{
+			width: 15px;
+			height: 12px;
+		}
+		.location-img
+		{
+			width: 13px;
+			height: 15px;
+		}
+		.web-img
+		{
+			width: 18px;
+			height: 18px;
+
 		}
 		.mg-top-less
 		{
@@ -160,6 +229,8 @@
 		  margin-top: 60px;
 		  justify-content: center;
 		  align-items: center;
+		  margin-bottom: 20px;
+
         }
         .big-icon-text-container
         {
@@ -197,6 +268,7 @@
 		  background-color: hsla(183.8709677419355, 87.15%, 48.82%, 1.00);
 
 
+
         }
         .contact-image
         {
@@ -223,12 +295,108 @@
 
         }
 
+        /*info container*/
+        .info-container
+        {
+        	width: 100%;
+        	height: 100vh;
+        	background-color:  #07242E;
+
+        	position: sticky;
+        	top:0;
+
+        }
+        .cover-image img
+        {
+        	width: 100%;
+        }
+        .txt-wrapper
+        {
+        	width: 100%;
+        	min-height: 100vh;
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        	font-family: 'Lato', sans-serif;
+        	
+
+        }
+        .txt-container
+        {
+        	width: 80%;
+        	min-height: 100vh;
+        	
+
+        }
+        .text-headline
+        {
+          width: 250px;
+		  margin-top: 30px;
+		  font-size: 22px;
+		  color: hsla(0, 0.00%, 100.00%, 1.00);
+		  font-weight: 900;
+		  line-height: 50px
+		  letter-spacing: 0.1em;
+		  margin-left: 10px;
+		 
+        }
+        .text-para
+        {
+        	width: 300px;
+        	margin-top: 20px;
+		    font-size: 15px;
+		    color: hsla(0, 0.00%, 100.00%, 1.00);
+		    font-weight: 300;
+		    line-height: 35px
+		    letter-spacing: 0.1em;
+		    margin-left: 10px;
+
+        }
+   .follow-text
+{
+	 font-size: 20px;
+	 margin-top: 48px;
+	 margin-left: 5px;
+}
+
+ 
+.icon-group
+{
+	margin-top: 20px;
+	display: flex;
+}
+.img-icon
+{
+	width: 30px;
+	height: 30px;
+}
+.mg-left-21
+{
+	margin-left: 20px;
+}
+.review-text
+{
+	margin-top: 20px;
+}
+.mg-down-25
+{
+	margin-bottom: 10px;
+}
+   
 
     </style>
 </head>
 <body>
-  
+
+	
    <div class="hero-wrapper">
+
+   	<img src="lines for background@2x.png" class="background-img">
+	<img src="circles2@2x.png" class="circle-one">
+	<img src="circles@2x.png" class="circle-two">
+    <img src="cross@2x.png" class="cross-one">
+    <img src="cross2@2x.png" class="cross-two">
+    <img src="1234567890@2x.png" class="one-two-three">
    	  
    	  
    	<div class="hero-container">
@@ -266,7 +434,7 @@
           
           <a class="contact-section mg-top-less">
           	<div class="icon-container">
-          	   <img src="home.png" class="home-img">
+          	   <img src="msg.png" class="msg-img">
             </div>
             <p class="txt">info@artcoolcards.gr.</p>
           </a>
@@ -274,14 +442,14 @@
 
           <a class="contact-section mg-top-less">
           	<div class="icon-container">
-          	   <img src="location.png" class="home-img">
+          	   <img src="location.png" class="location-img">
             </div>
             <p class="txt">Lisikratous 88, Kallithea, 17674 Athens, Greece</p>
           </a>
 
           <a class="contact-section mg-top-less">
           	<div class="icon-container">
-          	   <img src="location.png" class="home-img">
+          	   <img src="world.png" class="web-img">
             </div>
             <p class="txt">www.artcoolcards.gr</p>
           </a>
@@ -309,6 +477,39 @@
 
     </div>
 
+ </div>
+
+
+ <div class="info-container">
+ 	<div class="cover-image">
+ 		<img src="cover.png" class="cover">
+ 	</div>
+ 	<div class="txt-wrapper">
+ 		
+ 		<div class="txt-container">
+	 		<h1 class="text-headline">ΥΠΗΡΕΣΊΕΣ</h1>
+	 		<p class="text-para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis doloreeum iriure dolor in hendrerit in .</p>
+
+                <h1 class="follow-text">FOLLOW US</h1> 
+                <div class="icon-group">
+                	<a href="#"><img src="color@2x.png" class="img-icon"></a>
+                	<a href="#"><img src="color.png" class="img-icon mg-left-21"></a>
+                	<a href="#"><img src="colytor.png" class="img-icon mg-left-21"></a>
+                </div>  
+
+
+                <h1 class="follow-text review-text">OUR REVIEWS</h1> 
+                <div class="icon-group mg-down-25">
+                	<a href="#"><img src="Tripadvisor.png" class="img-icon"></a>
+                	<a href="#"><img src="bookingcom.png" class="img-icon mg-left-21"></a>
+                </div>
+ 	    </div>
+
+
+
+
+
+ 	</div>
  </div>
 
 
