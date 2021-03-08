@@ -33,16 +33,18 @@
     	}
     	.circle-one
     	{
-    		top: 2%;
+    		top:2%;
     		right: 30%;
     		width: 30px;
     		height: 26px;
+    		-webkit-animation: rotation 5s infinite linear;
     	}
     	.circle-two
         {
         	top: 60%;
         	width: 43px;
         	height: 38px;
+        	-webkit-animation: rotationReverse 2s infinite linear;
         }
         .cross-one{
             width: 15px;
@@ -51,6 +53,9 @@
             right: 30%;
             position: absolute;
            
+           animation: blink-animation 1s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1s steps(5, start) infinite;
+           
         }
         .cross-two{
         	width: 20px;
@@ -58,6 +63,7 @@
             top: 32%;
             right: 8%;
             position: absolute;
+            -webkit-animation: rotation 20s infinite linear;
 
         }
         .one-two-three
@@ -68,6 +74,36 @@
             top: 20%;
             right: 10%;
         }
+
+
+        @-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+         }
+
+
+         @-webkit-keyframes rotationReverse {
+		from {
+				-webkit-transform: rotate(359deg);
+		}
+		to {
+				-webkit-transform: rotate(0deg);
+		}
+         }
+         @keyframes blink-animation {
+        to {
+          opacity: 0;
+        }
+      }
+      @-webkit-keyframes blink-animation {
+        to {
+          opacity: 1;
+        }
+      }
 
     	.hero-wrapper
     	{
