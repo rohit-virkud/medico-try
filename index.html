@@ -105,6 +105,37 @@
         }
       }
 
+      /* animation */
+      
+      .arrow {
+      	position: absolute;
+  text-align: center;
+  right: 2%;
+  bottom: 5%;
+  font-size: 10px;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+} 
+
+
+      /**/
+
+
     	.hero-wrapper
     	{
     		width: 100%;
@@ -222,7 +253,7 @@
 		  height: auto;
 		  margin-left: 13px;
 		  color: hsla(0, 0.00%, 100.00%, 1.00);
-		  font-size: 14px;
+		  font-size: 12px;
 		  line-height:20px;
 		  letter-spacing: 0.1em;
 		  font-weight: 300;
@@ -381,7 +412,7 @@
         }
         .text-para
         {
-        	width: 350px;
+        	width: 300px;
         	margin-top: 20px;
 		    font-size: 14px;
 		    color: hsla(0, 0.00%, 100.00%, 1.00);
@@ -423,8 +454,19 @@
 	margin-bottom: 10px;
 }
    
+@media screen and (min-height: 700px)
+{ 
+  
+  .hero-wrapper
+  {
+    height: 120vh;
+  }
+  
+       
+}
 
     </style>
+    
 </head>
 <body>
 
@@ -437,6 +479,13 @@
     <img src="cross@2x.png" class="cross-one">
     <img src="cross2@2x.png" class="cross-two">
     <img src="1234567890@2x.png" class="one-two-three">
+
+    <!--scroll down animation  -->
+    <div class="arrow bounce">
+     <p style="transform: rotate(-90deg);">scroll down</p>
+     <img src="arrow.png" style="margin-top: 30px;margin-left: 5px;">
+    </div>
+
    	  
    	  
    	<div class="hero-container">
