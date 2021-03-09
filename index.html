@@ -451,15 +451,13 @@
 {
 	margin-top: 20px;
 }
-.mg-down-25
-{
-	margin-bottom: 10px;
-}
+
 .form-wrapper
 {
  
   width: 100%;
- margin-top: 20px;
+  margin-top: 10px;
+ padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -467,18 +465,28 @@
   background-color: white;
 
 }
+.input-container
+{
+	display: flex;
+	border-bottom: 1px solid #060606;
+	margin-top: 20px;
+	margin-left:10px;
+}
 .form-container
 {
    width: 80%;
    display: flex;
    flex-direction: column;
 }
+
 .input-text
 {
 	padding: 10px;
 	margin-top: 10px;
 	margin-left: 10px;
 	border: none;
+	color: #083855;
+	letter-spacing: 0.1em;
 	
 }
 .input-img-container img
@@ -488,11 +496,17 @@
 	margin-top: 15px;
 	margin-left: 3px;
 }
+.input-img-container  .form-msg-img
+{
+	width: 25px;
+	height: 20px;
+}
 
 .input-submit
 {
 	padding: 10px 20px;
 	margin-top: 25px;
+	margin-left:10px;
 	border: none;
 	border-radius: 40px;
 	font-weight: 600;
@@ -503,11 +517,85 @@
 	background: linear-gradient(187.32deg, #89DFF9 -17.12%, #05C2FC 94.31%);
 	filter: drop-shadow(0px 5px 15px rgba(18, 141, 185, 0.349)); 
 }
+.extra-icons
+{
+	padding-top: 30px;
+	width: 100%;
+	min-height: 25vh;
+	display: flex;
+	justify-content: center;
+	background-color: #07242E;
+}
+.extra-container
+{
+	width: 80%;
+	font-weight: 700;
+	  
+
+}
+.round-icons-container
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+.round
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.blue
+{
+	background-color: blue;
+}
+.secondary
+{
+	background-color: #05C2FC;
+}
+.green
+{
+	background-color:#92C14D;
+
+}
+.yellow
+{
+	background-color: #F1DA0A;
+}
+.extra-icon
+{
+	width: 54px;
+	height: 45px;
+}
+.footer
+{
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	justify-items: center;
+	justify-content: center;
+	margin-top: 30px;
+	background-color: white;
+}
+.footer img{
+	width: 43px;
+	height: 54px;
+}
+
+
+
 
 @media only screen and (min-height: 1440px) {
    .hero-wrapper
   {
-    height: 120vh;
+    height: 140vh;
   }
 }
 
@@ -649,20 +737,20 @@
 	    <h1 class="follow-text review-text" style="color: #0B838B;
 ">SUBSCRIBE</h1>  
 
-          <div class="input-container" style="display: flex;border-bottom: 1px solid black;margin-top: 20px;">
+          <div class="input-container">
           	<div class="input-img-container">
                <img src="Group 319@2x.png" >
              </div>
-	        <input type="text" name="" class="input-text">
+	        <input type="text" name="" class="input-text" placeholder="User Name">
 	      </div>
 
          
 
-         <div class="input-container" style="display: flex;border-bottom: 1px solid black;margin-top: 20px;">
+         <div class="input-container">
           	<div class="input-img-container">
-               <img src="Group 320@2x.png" >
+               <img src="Group 320@2x.png" class="form-msg-img">
              </div>
-	        <input type="text" name="" class="input-text">
+	        <input type="text" name="" class="input-text" placeholder="E-mail">
 	      </div>
 	     
 	      <div>
@@ -671,6 +759,41 @@
 	    </div>  
 
    </form>
+
+   <div class="extra-icons">
+	   <div class="extra-container"
+	       <h1 class="follow-text review-text" style="margin-left: 10px;">ΟΙ ΣΥΝΕΡΓΑΤΕΣ ΜΑΣ</h1> 
+	   
+	  
+	   <div class="round-icons-container">
+		   <div class="round blue">
+			   <img src="Group 205@2x.png" class="extra-icon">
+		   </div>
+		   <div class="round secondary" style="margin-left: 40px;">
+			<img src="Group 205@2x.png" class="extra-icon">
+		  </div>
+		  
+	   </div>
+	   
+	   <div class="round-icons-container" style="margin-top: 30px;">
+		<div class="round green">
+			<img src="Group 205@2x.png" class="extra-icon">
+		</div>
+		<div class="round yellow" style="margin-left: 40px;">
+		 <img src="Group 205@2x.png" class="extra-icon">
+	   </div>
+	   
+	</div>
+	   
+	   
+	    
+	</div>
+		
+   </div>
+
+   <div class="footer">
+	   <img src="logo.png">
+   </div>
 
  </div>
 
